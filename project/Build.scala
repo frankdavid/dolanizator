@@ -13,8 +13,6 @@ object ApplicationBuild extends Build {
   )
 
 
-  val main = play.Project(appName, appVersion, appDependencies).settings(
-    Play2WarPlugin.play2WarSettings: _*
-  ).settings(Play2WarKeys.servletVersion := "2.5").settings(Play2WarKeys.explodedJar := true)
+  val main = play.Project(appName, appVersion, appDependencies)
 
 }
