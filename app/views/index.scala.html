@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dolanizátor PRO 2013</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("bootstrap/css/bootstrap.min.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("bootstrap/js/bootstrap.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <img class="dolan" src="@routes.Assets.at("images/dolan.png")"/>
+        <img class="dolan_front" src="@routes.Assets.at("images/dolan_front.png")"/>
+        <div class="title">Dolanizátor PRO 2013</div>
+        <div id="urlBox">
+        @helper.form(action = routes.Application.index) {
+            <input class="form-control" placeholder="Írd ide az URL-t" name="url" /> <br>
+            <button class="btn btn-primary pull-right">gooby pls</button>
+        }
+        </div>
+    </body>
+</html>

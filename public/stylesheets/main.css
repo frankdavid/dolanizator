@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #a1dbff;
+    background: linear-gradient(to bottom, #a1dbff 0%, #cbebff 25%, #f0f9ff 50%);
+    font-family: "Comic Sans MS", cursive, sans-serif !important;;
+}
+
+.title {
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    color: #285e8e;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -30px;
+    font-size: 30px;
+}
+
+#urlBox {
+    border: 1px solid #1e1e1e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    width: 600px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    background-color: #f6fbff;
+}
+
+img.dolan, img.dolan_front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -360px;
+    margin-top: -330px;
+}
+
+img.dolan_front {
+    z-index: 2;
+}
+
+.btn {
+    width: 150px;
+}
