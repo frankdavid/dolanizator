@@ -72,15 +72,17 @@ class Dolanizer(urlParam: String) {
       text.split(" ").map(x => {
         var dolan = new DolanString(x)
         var i = 0
-        while (dolan.replaced == 0 && i < 4) {
+        while (dolan.replaced == 0 && i < 2) {
           i += 1
           dolan = dolan.swapRandomCharacters()
             .replaceWithProbability("", "j", "ly")
             .replaceWithProbability("", "ly", "j")
+            .replaceWithProbability("", "v", "f")
             .replaceWithProbability(Vowel, "dt", "tt")
             .replaceWithProbability(Vowel, "tt", "t")
             .replaceWithProbability(Vowel, "nn", "n")
             .replaceWithProbability(Vowel, "bb", "b")
+            .replaceWithProbability(Vowel, "ll", "l")
             .replaceWithProbability(Vowel, "z", "sz")
             .replaceWithProbability("", "í", "i")
             .replaceWithProbability("", "i", "í")
