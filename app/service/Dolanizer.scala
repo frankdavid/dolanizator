@@ -74,7 +74,7 @@ class Dolanizer(urlParam: String) {
         var i = 0
         while (dolan.replaced == 0 && i < 2) {
           i += 1
-          dolan = dolan.swapRandomCharacters()
+          dolan = dolan
             .replaceWithProbability("", "j", "ly")
             .replaceWithProbability("", "ly", "j")
             .replaceWithProbability("", "v", "f")
@@ -89,6 +89,7 @@ class Dolanizer(urlParam: String) {
             .replaceWithProbability("", "o", "ó")
             .replaceWithProbability("", "ó", "o")
             .replaceWithProbability(Vowel, "s", "zs")
+            .swapRandomCharacters()
         }
         dolan
       })

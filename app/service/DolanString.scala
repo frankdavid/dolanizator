@@ -4,7 +4,7 @@ import scala.util.Random
 import scala.util.matching.Regex
 
 class DolanString(val wrappedString: String, val replaced: Int = 0) {
-  def swapRandomCharacters(probability: Double = 0.3): DolanString = {
+  def swapRandomCharacters(probability: Double = 0.2): DolanString = {
     if (replaced > 0)
       return this
 
